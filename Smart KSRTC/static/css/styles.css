@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Map Section */
+#map-section {
+    width: 100%;
+    padding: 10px;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Reset Map Button */
+#reset-map {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reset-map:hover {
+    background-color: #e65c00;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff6f00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Main Layout */
+main {
+    width: 95%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Bus Info Sections */
+#bus-info-section,
+#bus-stop-info {
+    background: #2b2b2b;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.05);
+    color: #ddd;
+}
+
+/* Bus List Styling */
+ul#bus-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul#bus-list li {
+    margin: 10px 0;
+    background-color: #ffcc80;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bus Stop Info Text */
+#bus-stop-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#bus-stop-info strong {
+    color: #ffb74d;
+    font-weight: 600;
+}
+
+/* Safehouse Marker Styling */
+.safehouse-marker {
+    text-align: center;
+    filter: drop-shadow(0 0 5px rgba(0, 188, 212, 0.7));
+}
+
+/* Grey Safehouse Marker */
+.grey-safehouse-marker {
+    text-align: center;
+    filter: drop-shadow(0 0 5px rgba(117, 117, 117, 0.7));
+}
+
+/* Orange Safehouse Marker */
+.orange-safehouse-marker {
+    text-align: center;
+    filter: drop-shadow(0 0 5px rgba(255, 111, 0, 0.7));
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSRTC Smart Bus Stop - Live Tracking</title>
+
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+
+    <!-- FontAwesome for Bus and Location Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<header>🚌 <span>KSRTC Smart Bus Stop - Live Tracking</span></header>
+<main>
+    <section id="map-section">
+        <h2>Live Bus Locations</h2>
+        <button id="reset-map" onclick="resetMapView()">Reset Map View</button>
+        <div id="map"></div>
+    </section>
+    <section id="bus-info-section">
+        <h2>Upcoming Buses</h2>
+        <ul id="bus-list">
+            <li>Bus 101 - Kesavadasapuram to East Fort</li>
+            <li>Bus 205 - Technopark to Statue</li>
+            <li>Bus 307 - Palayam to Vellayambalam</li>
+        </ul>
+    </section>
+    <section id="bus-stop-info">
+        <h2>Bus Stop Information</h2>
+        <p><strong>Location:</strong> Kesavadasapuram, Kerala</p>
+        <p><strong>Amenities:</strong> Seating, Free WiFi, Refreshments, Charging Stations</p>
+    </section>
+</main>
+
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
